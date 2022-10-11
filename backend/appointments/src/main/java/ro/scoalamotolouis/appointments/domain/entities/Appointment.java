@@ -2,15 +2,15 @@ package ro.scoalamotolouis.appointments.domain.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import ro.scoalamotolouis.appointments.domain.enums.AppointmentType;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
 @Entity
@@ -23,5 +23,6 @@ public class Appointment {
 
     private AppointmentType type;
 
+    @ManyToOne
     private Motorcycle  motorcycle;
 }

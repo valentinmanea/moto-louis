@@ -26,4 +26,8 @@ public class StudentService {
     public List<Student> findAll() {
         return studentRepo.findAll();
     }
+
+    public Student save(Student student) {
+        return studentRepo.save(student);
+    }
 }
