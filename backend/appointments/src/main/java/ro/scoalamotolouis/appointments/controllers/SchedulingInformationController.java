@@ -25,7 +25,7 @@ public class SchedulingInformationController {
     }
 
     @GetMapping("/information")
-    public SchedulingInformation timeSlots() {
+    public SchedulingInformation information() {
         return schedulingInformationService.getAllSchedulingInformation();
     }
 }

@@ -15,8 +15,9 @@ httpOptions = {
     'Content-Type':  'text/plain',
   })
 };
-hello() {
-  return this.http.get(this.url + 'hello', this.httpOptions);
+
+schedulingInformation() {
+  return this.http.get(this.url + 'scheduling/information', this.httpOptions);
 }
 
 }
